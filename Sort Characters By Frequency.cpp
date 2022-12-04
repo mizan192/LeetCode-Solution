@@ -23,3 +23,34 @@ return ans;
 
     }
 };
+
+/*
+class Solution {
+public:
+    string frequencySort(string s) {
+
+        map<char,int>m;
+        priority_queue<pair<int,char>>q;
+
+        for(auto x : s){
+            m[x]++;
+        }
+        for(auto x : m){
+            q.push(make_pair(x.second,x.first));
+        }
+
+        string ans="";
+while(!q.empty()){
+    auto it =q.top();
+    q.pop();
+            int j=it.first;
+            char c=it.second;
+            for(int i=0;i<j;i++) ans+=c;
+        }
+
+return ans;
+
+
+    }
+};
+*/
